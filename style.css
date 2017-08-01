@@ -5,8 +5,13 @@
 }
 
 img {
-	height: 40%;
-	width: 30%;
+	max-width: 100%;
+	height: auto;
+}
+
+.container {
+	width: 95%;
+	margin: 0 auto;
 }
 
 * {
@@ -23,7 +28,7 @@ body {
 
 header {
 	position: absolute;
-	margin-top: 1em;
+	margin: 1em;
 	left: 0;
 	right: 0;
 }
@@ -49,6 +54,15 @@ nav a {
 
 }
 
+@media (min-width:60rem) {
+	.logo {
+		float: left;
+	}
+   nav {
+   	float: right;
+   }
+}
+
 nav a:hover,
 nav a:focus {
 	color: #DDD;
@@ -60,8 +74,71 @@ nav a:focus {
 .home-hero {
 	background-image: url(design.jpg);
 	background-size: cover;
+	background-position: center;
 	padding: 10em 0;
+	color: #fff;
 }
+
+@media (min-width:60rem) {
+	.home-hero {
+		height: 100vh;
+		padding-top: 35vh;
+	}
+
+}
+
+/*typography
+================== */
+
+.title {
+	font-size: 2.5rem;
+	margin-bottom: 1.5em;
+}
+
+.title span {
+	font-weight: 300;
+	display: block;
+	font-size: .9em;
+}
+
+@media (min-width:60rem) {
+	.title {
+		font-size: 3.7rem;
+	}
+
+}
+
+/* buttons */
+
+.button {
+	display: inline-block;
+	font-size: 1.5rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-width: 2px;
+	border-style: solid;
+	padding: .5em 1.75em;
+}
+
+.button-accent {
+	color: #00FF6C;
+	border-color: #00ff6c;
+}
+
+.button-accent:hover,
+.button-accent:focus {
+	background: #00ff6c;
+	color: #232323;
+
+}
+
+@media (min-width:60rem) {
+	.button {
+		font-size: 1.5rem;
+	}
+
+}
+
 
 
 
