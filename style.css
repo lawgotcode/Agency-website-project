@@ -90,9 +90,17 @@ nav a:focus {
 /*typography
 ================== */
 
+h1 {
+	font-weight: : 300;
+	font-size: 2.5rem;
+	margin-top: 0;
+}
+
 .title {
 	font-size: 2.5rem;
 	margin-bottom: 1.5em;
+	font-weight: 900;
+	margin-top: 1em;
 }
 
 .title span {
@@ -137,6 +145,19 @@ nav a:focus {
 		font-size: 1.5rem;
 	}
 
+}
+
+.home-about-textbox {
+    background-color: #232323;
+    padding: 3em;
+    width: 100vw;
+    margin-left: -2.5%;
+    outline: 2px solid #00ff6c;
+    outline-offset: -2.5em;
+}
+
+.home-about-textbox h1 {
+	color: #00ff6c;
 }
 
 
