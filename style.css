@@ -15,6 +15,14 @@ img {
 	margin: 0 auto;
 }
 
+.clearfix::after,
+section::after {
+	content: '';
+	display: block;
+	clear: both;
+
+}
+
 * {
 	box-sizing: border-box;
 	transition: all ease-in-out 250ms;
@@ -144,7 +152,7 @@ h1 {
 }
 
 .button-small {
-	font-size: .6rem;
+	font-size: .7rem;
 	font-weight: 700;
 }
 
@@ -157,6 +165,18 @@ h1 {
 .button-accent:focus {
 	background: #00ff6c;
 	color: #232323;
+
+}
+
+.button-accent {
+	color: #232323;
+	border-color: #232323;
+}
+
+.button-dark:hover,
+.button-dark:focus {
+	background: #232323;
+	color: #00ff6c;
 
 }
 
@@ -242,7 +262,7 @@ p:last-of-type {
 /* portfolio 
 ================ */
 .portfolio {
-	margin: 3em 0;
+	margin: 3em 0 0;
 }
 
 
@@ -295,6 +315,15 @@ p:last-of-type {
     .port-item:hover .port-desc {
     	transform: translateY(0%);
     }
+}
+
+/* CTA 
+================== */
+
+.cta {
+	background-color: #00ff6c;
+	padding: 3em 0;
+
 }
 
 
