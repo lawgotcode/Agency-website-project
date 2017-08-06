@@ -16,8 +16,9 @@ img {
 }
 
 .clearfix::after,
-section::after
+section::after,
 footer::after {
+              
 	content: '';
 	display: block;
 	clear: both;
@@ -100,10 +101,42 @@ nav a:focus {
 
 /* colum system footer
 ================ */
-
 [class^=col-] {
-	float: left;
+	
+	width: 100%;
 }
+
+
+
+@media (min-width: ) {
+
+	[class^=col-] {
+	float: left;
+	padding: 0 .5em;
+	width: 100%;
+}
+
+[class^=col-]:first-child {
+	padding-left: 0;
+}
+
+[class^=col-]::last-child {
+	padding-right: 0;
+}
+
+.col-3 {
+	width: 50%;
+
+}
+
+.col-1 {
+     width: 16.6666%
+ }
+}
+
+
+
+
 
 /*typography
 ================== */
@@ -130,6 +163,7 @@ h1 {
 .title-cta {
 	margin: 0 0 .5em;
 }
+
 
 .unstyled-list {
 	margin: 0;
@@ -186,7 +220,7 @@ h1 {
 
 }
 
-.button-accent {
+.button-dark {
 	color: #232323;
 	border-color: #232323;
 }
@@ -340,7 +374,7 @@ p:last-of-type {
 
 .cta {
 	background-color: #00ff6c;
-	padding: 6em 0;
+	padding: 4em 0;
 
 }
 
@@ -348,8 +382,10 @@ p:last-of-type {
 ==================== */
 
 footer {
-	background-color: #232323;
-
+	background: #232323;
+	color: #fff;
+	text-align: left;
+	padding: 5em 0;
 }
 
 
